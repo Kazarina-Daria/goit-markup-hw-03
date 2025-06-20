@@ -8,9 +8,10 @@ body{
 }
 .container {
     max-width: 1158px;
-    padding-left: 156px;
-    padding-right: 156px;
-    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 ul,
@@ -25,15 +26,19 @@ ol {
 }
 .header-nav{
     display: flex;
-    padding-right: 332px;
     gap: 40px;
     flex-grow: 1;
+}
+.navigation{
+    margin-left: 156px;
 }
 header{
 padding-top: 24px;
 padding-bottom: 24px;
 }
 .site-logo {
+    margin: 0;
+    margin-top: 100px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     margin-right: 76px;
@@ -83,6 +88,8 @@ background-color: #404BBF;
     display: flex;
     gap: 40px;
     align-items: center;
+    justify-content: flex-end;
+    margin-left:156px;
 }
 .contact-info {
     font-style: normal;
@@ -90,7 +97,7 @@ background-color: #404BBF;
 
 .contact-link {
     line-height: 1.5;
-    font-weight: 500;
+    font-weight: 400;
     text-decoration: none;
     font-size: 16px;
     letter-spacing: 0.02em;
@@ -107,27 +114,43 @@ address ul,
     list-style: none;
 }
 .slogan{
+    padding-top: 188px;
+    text-align: center;
+    margin: 0 auto;
     line-height: 1.07;
     font-weight: 700;
      font-size:  56px;
     letter-spacing: 0.02em;
      color: #FFFFFF;
+
+}
+.section-one{
+    align-items: center;
     text-align: center;
+    justify-content: center;
 }
 .slogan-button{
     cursor: pointer;
     line-height: 1.5;
     font-size: 16px;
+    width: 169px;
+    height: 56px;
+    margin-bottom: 168px;
     font-weight: 500;
+    margin-top: 48px;
     font-family: inherit;
     letter-spacing: 0.04em;
     background-color: #4D5AE5;
     color: #FFFFFF;
    border: none;
 }
-.portfolio-examples-title,
+
 .advantsges-titles-text,
 .team-subtitle{
+    margin: 0;
+    margin-top: 32px;
+    justify-content: center;
+    text-align: center;
     color: #2e2f42;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -136,17 +159,24 @@ address ul,
 }
 
 .portfolio-examples{
+    display: flex;
+    margin-top: 72px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #434455;
     font-weight: 400;
-     font-size: 16px;
+    font-size: 16px;
+margin-bottom: 120px;
+    gap: 24px;
+    flex-wrap: wrap;
     }
     .advantage-text{
         line-height: 1.5;
             letter-spacing: 0.02em;
             color: #434455;
             font-weight: 400;
+            margin: 0;
+            margin-top: 8px;
             font-size: 16px;
     }
     .portfolio-examples-p,
@@ -157,19 +187,43 @@ address ul,
                 font-weight: 400;
                 font-size: 16px;
         }
+.portfolio-examples-p{
+    margin: 0;
+    margin-top: 8px;
+    margin-bottom: 32px;
+    padding-left: 16px;
 
+}
 .advantsges-title{
+
+    margin-left: 156px;
     letter-spacing: 0.02em;
     font-size: 20px;
+    display: flex;
+    margin-top: 120px;
+    justify-content: center;
+    gap: 24px;
+  flex-basis: calc((100% - 3 * 24px) / 4);
+
 }
 .visually-hidden{
-    color: #2e2f42;
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path:insert(100%);
+  clip: rect(0 0 0 0);
+  overflow:hidden;
 }
 .team-title{
     text-transform: capitalize;
     letter-spacing: 0.02em;
         line-height: 1.11;
         font-weight: 700;
+        margin: 0;
         font-size: 36px;
         color: #2e2f42;
         text-align: center;
@@ -177,8 +231,12 @@ address ul,
 
 .footer{
     background-color: #2e2f42;
+    margin: 0;
+    padding: 156px;
 }
 .footer-text{
+    margin: 0;
+    margin-bottom: 100px;
     color: #F4F4FD;
     font-weight: 400;
     font-size: 16px;
@@ -192,12 +250,26 @@ address ul,
     background-color: #2e2f42;
 }
 .portfolio-examples-title{
+    margin: 0;
+        color: #2e2f42;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        font-weight: 500;
+        font-size: 20px;
+    padding-left: 16px;
+    margin-top: 32px;
  color:#2e2f42;
 }
 .team-paragraph{
+    margin: 0;
+    margin-top: 8px;
     font-size: 16px;
+    margin-bottom: 32px;
+    text-align: center;
 }
 .portfolio {
+    margin: 0;
+    margin-top: 120px;
     text-transform: capitalize;
     letter-spacing: 0.02em;
     line-height: 1.11;
@@ -207,8 +279,26 @@ address ul,
     text-align: center;
 }
 .advantsges-titles-text{
+    margin: 0;
     color: #2e2f42;
 }
 .team-members-list {
     background-color: #FFFFFF;
+    margin-bottom: 120px;
+    box-shadow: 0 2px 6px #2E2F4229;
+        margin-top: 72px;
+}
+.team-members{
+display: flex;
+padding-left: 157px;
+flex-basis :calc:((100% - 3 * 24px) / 4);
+gap: 24px ;
+}
+.advantsges-title{
+    margin-bottom: 120px;
+}
+.section{
+   padding-top:120px ;
+   padding-bottom: 120px;
+ 
 }
