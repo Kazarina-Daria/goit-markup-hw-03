@@ -154,14 +154,17 @@ address ul,
     margin: 0;
     margin-top: 32px;
     justify-content: center;
-    text-align: center;
     color: #2e2f42;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    text-align: center;
     font-weight: 500;
     font-size: 20px;
 }
 
+.team-subtitle {
+    margin-bottom: 8px
+}
 .portfolio-examples{
     row-gap: 48px;
     display: flex;
@@ -171,9 +174,14 @@ address ul,
     color: #434455;
     font-weight: 400;
     font-size: 16px;
+    row-gap: 48px;
 margin-bottom: 120px;
     gap: 24px;
     flex-wrap: wrap;
+    }
+    .portflio-container{
+        border: 1px solid #e7e9fc;
+        border-top: none;
     }
     .advantage-text{
         line-height: 1.5;
@@ -220,11 +228,11 @@ margin-bottom: 120px;
     margin: -1px;
     border: 0;
   padding: 0;
-margin-bottom: 8px;
   white-space: nowrap;
   clip-path:insert(100%);
   clip: rect(0 0 0 0);
   overflow:hidden;
+margin-bottom: 8px;
 }
 .team-title{
     text-transform: capitalize;
@@ -235,6 +243,7 @@ margin-bottom: 8px;
         font-size: 36px;
         color: #2e2f42;
         text-align: center;
+        margin-bottom: 72px;
 }
 
 .footer{
@@ -297,11 +306,12 @@ margin-bottom: 8px;
     margin-bottom: 120px;
     box-shadow: 0 2px 6px #2E2F4229;
         margin-top: 72px;
+        width: calc((100% - 72px) / 4);
 }
 .team-members{
 display: flex;
 padding-left: 157px;
-flex-basis :calc: ((100% - 3 * 24px) / 4);
+border-radius: 0px 0px 4px 4px;
 gap: 24px ;
 }
 .advantsges-title{
@@ -314,6 +324,10 @@ gap: 24px ;
 .section-one{
     padding: 188px 0;
 }
+.section-three,
 .section-two{
     padding: 120px 0;
+}
+.team-info{
+    padding: 32px 0;
 }
