@@ -6,20 +6,37 @@ body{
     margin: 0;
     padding-left: 0;
 }
+.container {
+    max-width: 1158px;
+    padding-left: 156px;
+    padding-right: 156px;
+    margin: 0 auto;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 .logo-span {
     color: #2e2f42;
     font-family: "Raleway", sans-serif; 
 }
 .header-nav{
     display: flex;
+    padding-right: 332px;
+    gap: 40px;
     flex-grow: 1;
 }
 header{
-    padding: 24px;
+padding-top: 24px;
+padding-bottom: 24px;
 }
 .site-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
+    margin-right: 76px;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
@@ -27,8 +44,10 @@ header{
     color: #4d5ae5;
     text-decoration: none;
 }
-.navigation{
+.header-navigation{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 img {
     display: block;
@@ -62,6 +81,8 @@ background-color: #404BBF;
 }
 .contact-list{
     display: flex;
+    gap: 40px;
+    align-items: center;
 }
 .contact-info {
     font-style: normal;
@@ -190,17 +211,4 @@ address ul,
 }
 .team-members-list {
     background-color: #FFFFFF;
-}
-.container {
-    max-width:1128px;
-        padding-left:156px ;
-        padding-right:156px ;
-        margin-left: auto;
-        margin-right: auto;
-}
-ul,
-ol {
-    margin: 0;
-    padding: 0;
-    list-style: none;
 }
