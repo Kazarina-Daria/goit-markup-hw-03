@@ -41,13 +41,13 @@ border-bottom: 1px solid #e7e9fc;
     margin: 0;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
-    margin-right: 76px;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
     display: inline-block;
+    margin-right: 76px;
     margin-bottom: 16px;
     text-decoration: none;
 }
@@ -72,6 +72,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding: 24px 0;
     text-decoration: none; }
 
 
@@ -165,8 +166,11 @@ address ul,
 .team-subtitle {
     margin-bottom: 8px
 }
+.portfolio-pieses{
+    border: 1px solid #e7e9fc;
+}
 .portfolio-examples{
-    row-gap: 48px;
+    margin: 0;
     display: flex;
     margin-top: 72px;
     line-height: 1.5;
@@ -174,15 +178,17 @@ address ul,
     color: #434455;
     font-weight: 400;
     font-size: 16px;
-    row-gap: 48px;
+    gap: 48px 24px;
 margin-bottom: 120px;
-    gap: 24px;
     flex-wrap: wrap;
     }
     .portflio-container{
         border: 1px solid #e7e9fc;
         border-top: none;
     }
+        .portfolio-examples-title{
+            margin-bottom: 8px;
+        }
     .advantage-text{
         line-height: 1.5;
             letter-spacing: 0.02em;
@@ -221,6 +227,7 @@ margin-bottom: 120px;
 .advantsges-title-text {
     flex-basis: calc((100% - 3 * 24px) / 4);
 }
+
 .visually-hidden{
     position: absolute;
     height: 1px;
@@ -307,6 +314,7 @@ margin-bottom: 8px;
     box-shadow: 0 2px 6px #2E2F4229;
         margin-top: 72px;
         width: calc((100% - 72px) / 4);
+            border-radius: 0px 0px 4px 4px;
 }
 .team-members{
 display: flex;
