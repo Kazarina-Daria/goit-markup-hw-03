@@ -52,6 +52,9 @@ border-bottom: 1px solid #e7e9fc;
     margin-right: 76px;
     text-decoration: none;
 }
+.footer .site-logo {
+    margin-bottom: 16px;
+}
 .header-navigation{
     display: flex;
     justify-content: space-between;
