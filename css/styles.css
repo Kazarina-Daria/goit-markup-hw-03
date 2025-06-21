@@ -23,6 +23,8 @@ ol {
     font-family: "Raleway", sans-serif; 
 }
 .header-nav{
+    margin: 0;
+        padding: 0;
     display: flex;
     gap: 40px;
     flex-grow: 1;
