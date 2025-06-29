@@ -275,7 +275,9 @@ address ul,
 .footer{
     background-color: #2e2f42;
     margin: 0;
+    display: flex;
     padding: 100px 0;
+    
 
 }
 .footer-text{
@@ -362,4 +364,18 @@ gap: 24px ;
 }
 .portfolio-examples-title {
     margin-bottom: 8px;
+}
+.icons-footer-list{
+   display:flex;
+}
+.social-media-title{
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.32px;
+    color:#FFFFFF;
+}
+.icons-footer-svg{
+    display: block;
+    width:40px;
+    height: 40px;;
 }
