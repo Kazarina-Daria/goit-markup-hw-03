@@ -10,8 +10,8 @@ body{
 *:hover,
 *:focus {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
 }
 
 .container {
@@ -69,6 +69,7 @@ border-bottom: 1px solid #e7e9fc;
 .header .container{
     display: flex;
 }
+
 img {
     display: block;
     max-width: 100%;
@@ -101,11 +102,24 @@ img {
 .slogan-button:focus{
 background-color: #404BBF;
 }
+
 .nav-link-active{
     position: relative;
+    color:#404BBF;
 }
-.nav-link.active::after {
+.nav-link-active::after {
+    content: "";
     position: absolute;
+    border-radius: 1px;
+    bottom: -20px;
+   height: 4px;
+left: 0;
+   width: 48px;
+   border-radius: 2px;
+background-color: #404BBF;
+}
+.portfolio-examples-wrap{
+    height: 100;
 }
 .contact-link:hover,
 .contact-link:focus,
@@ -125,7 +139,23 @@ background-color: #404BBF;
 .contact-info {
     font-style: normal;
 }
+.svg-container{
+    width: 264px;
+    height: 112px;
+    background-color: #F4F4FD;
+    border-color:#8E8F99 ;
+    margin-bottom: 8px;
+    border: 1px solid ;
+    border-radius:4px;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+}
 
+.icons-section-two{
+    width:64px;
+     height:64px;
+}
 .contact-link {
     line-height: 1.5;
     font-weight: 400;
@@ -195,6 +225,7 @@ address ul,
     margin-bottom: 8px
 }
 .portfolio-pieses{
+   position: relative;
     border: 1px solid #e7e9fc;
     width: calc((100% - 48px) / 3);
 }
@@ -213,7 +244,21 @@ address ul,
         border: 1px solid #e7e9fc;
         border-top: none;
     }
-    
+    .social-media-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap:24px;
+    }
+    .social-media{
+            width: 40px;
+            height:40px;
+            fill: currentColor;
+     }
+
+     .social-media:hover{
+        color: #404BBF; 
+     }
     .advantage-text{
         line-height: 1.5;
             letter-spacing: 0.02em;
@@ -309,6 +354,7 @@ address ul,
 .team-paragraph{
     margin: 0;
     margin-top: 8px;
+    margin-bottom: 8px;
     font-size: 16px;
     text-align: center;
 }
@@ -323,6 +369,25 @@ address ul,
     color: #2e2f42;
     text-align: center;
 }
+.back-card-text{
+    color: #F4F4FD;
+    font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+}
+
+.portfolio-container-back{
+    position: absolute;
+    top: 0;
+    transition: 1s all ease-in-out;
+    opacity: 0;
+    background-color: #4D5AE5;
+    box-sizing: border-box;
+}
+.portfolio-container-back:hover{
+    transform: translate();
+}
+.portfolio-container-back,
 .portfolio-container {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
@@ -371,11 +436,27 @@ gap: 24px ;
 .social-media-title{
     font-weight: 500;
     font-size: 16px;
-    letter-spacing: 0.32px;
+    margin: 0;
+    margin-bottom: 16px;
     color:#FFFFFF;
 }
 .icons-footer-svg{
     display: block;
     width:40px;
     height: 40px;;
+}
+
+.footer-logo-text{
+    flex: 1;
+   width: 264px;
+    margin-left: 156px;
+    margin-right: 120px;
+}
+.social-media-footer{
+    flex: 2;
+}
+.icons-footer-group{
+    display: flex;
+    gap: 16px;
+    flex-direction: row;
 }
