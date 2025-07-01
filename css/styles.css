@@ -458,9 +458,18 @@ gap: 24px ;
 }
 .social-media-footer{
     flex: 2;
+    
 }
  .icons-footer{
     display: flex;
     gap: 16px;
     flex-direction: row;
  }
+ .icons-footer-svg{
+   fill: #4D5AE5;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .icons-footer-item:hover .icons-footer-svg,
+ .icons-footer-item:focus .icons-footer-svg {
+    fill: #31D0AA;}
