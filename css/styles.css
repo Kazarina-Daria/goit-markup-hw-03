@@ -455,8 +455,8 @@ gap: 24px ;
 .social-media-footer{
     flex: 2;
 }
-.icons-footer-group{
+ .icons-footer{
     display: flex;
     gap: 16px;
     flex-direction: row;
-}
+ }
