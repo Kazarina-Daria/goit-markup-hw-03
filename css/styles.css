@@ -209,7 +209,7 @@ address ul,
    border: none;
 }
 
-.advantsges-titles-text,
+
 .team-subtitle{
     margin: 0;
     justify-content: center;
@@ -253,7 +253,8 @@ address ul,
     .social-media-svg{
             width: 40px;
             height:40px;
-            fill: currentColor;
+            fill: transparent;
+    
      }
 
     .advantage-text{
@@ -286,9 +287,17 @@ address ul,
     gap: 24px;
 
 }
-.advantsges-title-text {
+.advantsges-titles-text {
+        margin: 0;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        font-weight: 500;
+        font-size: 20px;
+        color: #2e2f42;
+        margin-bottom: 8px;
     flex-basis: calc((100% - 3 * 24px) / 4);
 }
+
 
 .visually-hidden {
     position: absolute;
@@ -373,14 +382,44 @@ address ul,
         letter-spacing: 0.02em;
 }
 
-.portfolio-container-back{
+.overlay{
     position: absolute;
-    top: 0;
-    transition: 1s all ease-in-out;
-    opacity: 0;
-    background-color: #4D5AE5;
-    box-sizing: border-box;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding-top: 45%;
+        padding-left: 32%;
+        background-color: #4D5AE5;
+        transform: translatey(100%);
+            transition: transform 250ms ease-in-out;
+        }
+.section-four .container{
+    position:relative;
 }
+
+.image-wrapper{
+    overflow: hidden;
+    position: relative;
+}
+.back-card-text{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+        left: 50%;
+    width:100%;
+    margin-top: 40px;
+    width: 296px;
+    overflow: hidden;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: #F4F4FD;
+}
+        .section-four .container:hover .overlay{
+            transform: translatey(0);
+        }
 .portfolio-container-back:hover{
     transform: translate();
 }
@@ -390,18 +429,16 @@ address ul,
     border: 1px solid #e7e9fc;
     border-top: none;
 }
-.advantsges-titles-text{
-    margin: 0;
-    color: #2e2f42;
-    margin-bottom: 8px;
-}
+
 .team-members-list {
+    
     background-color: #FFFFFF;
     box-shadow: 0 2px 6px #2E2F4229;
         width: calc((100% - 3 * 24px) / 4);
             border-radius: 0px 0px 4px 4px;
 }
 .team-members-list:hover {
+    
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
@@ -441,11 +478,7 @@ gap: 24px ;
     margin-bottom: 16px;
     color:#FFFFFF;
 }
-.icons-footer-svg{
-    display: block;
-    width:40px;
-    height: 40px;;
-}
+
 
 .footer-logo-text{
     flex: 1;
@@ -463,16 +496,29 @@ gap: 24px ;
     flex-direction: row;
  }
  .icons-footer-svg{
-   fill: #4D5AE5;
+    display: block;
+        width: 40px;
+        height: 40px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
- .icons-footer-item:hover .icons-footer-svg,
- .icons-footer-item:focus .icons-footer-svg {
-    fill: #31D0AA;}
 
-        .social-media a:hover,
-        .social-media a:focus {
-            background-color: #404BBF;
+        .social-media-svg a:hover,
+        .social-media-svg a:focus {
+            fill: #404BBF;
             transform: scale(1.1);
+        }
+                
+        .social-media:hover{
+            fill: transparent;
+            stroke: #404BBF;
+            transform: scale(1.1);
+        }
+                .icons-footer-svg{
+                    fill: transparent;
+                    stroke: none;
+                }
+        .icons-footer-svg:hover{
+            fill: transparent;
+            stroke: #31D0AA;
         }
