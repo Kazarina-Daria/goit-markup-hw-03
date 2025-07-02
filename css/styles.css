@@ -250,15 +250,12 @@ address ul,
         justify-content: center;
         gap:24px;
     }
-    .social-media{
+    .social-media-svg{
             width: 40px;
             height:40px;
             fill: currentColor;
      }
 
-     .social-media:hover{
-        color: #404BBF; 
-     }
     .advantage-text{
         line-height: 1.5;
             letter-spacing: 0.02em;
@@ -473,3 +470,9 @@ gap: 24px ;
  .icons-footer-item:hover .icons-footer-svg,
  .icons-footer-item:focus .icons-footer-svg {
     fill: #31D0AA;}
+
+        .social-media a:hover,
+        .social-media a:focus {
+            background-color: #404BBF;
+            transform: scale(1.1);
+        }
