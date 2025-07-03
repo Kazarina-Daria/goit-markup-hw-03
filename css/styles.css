@@ -193,6 +193,7 @@ address ul,
 
 }
 .section-one{
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.png);
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -232,6 +233,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-bottom: 8px
 }
 .portfolio-pieses{
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
    position: relative;
     border: 1px solid #e7e9fc;
     width: calc((100% - 48px) / 3);
@@ -265,10 +267,9 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
      }
 
      .media-list{
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-            0px 1px 1px rgba(46, 47, 66, 0.16),
-            0px 2px 1px rgba(46, 47, 66, 0.08);
+        
      }
     .advantage-text{
         line-height: 1.5;
@@ -290,7 +291,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .portfolio-examples-p{
     margin: 0;
     margin-top: 8px;
-
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .advantsges-title{
     letter-spacing: 0.02em;
@@ -422,14 +423,11 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         transition: transform 250ms ease-in-out;
     }
         .portfolio-pieses:hover{
-            
+            box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
         }
     .portfolio-pieses:hover .overlay {
         transform: translateY(0);
 }
-        .portfolio-pieses:hover .overlay{
-            transform: translateY(0);
-        }
         
 .portfolio-container-back:hover{
     transform: translate();
@@ -442,7 +440,9 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-members-list {
-    
+    box-shadow:(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
     background-color: #FFFFFF;
     box-shadow: 0 2px 6px #2E2F4229;
         width: calc((100% - 3 * 24px) / 4);
