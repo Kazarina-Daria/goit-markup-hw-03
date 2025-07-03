@@ -484,12 +484,17 @@ gap: 24px ;
     flex: 2;
     
 }
+.social-media
  .icons-footer{
     display: flex;
     gap: 16px;
     flex-direction: row;
  }
  
+ .social-media:hover .social-media-svg,
+ .social-media:focus .social-media-svg {
+    fill: #404BBF;
+    }
      
 
  .icon-link {
