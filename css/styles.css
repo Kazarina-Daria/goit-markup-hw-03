@@ -564,6 +564,7 @@ flex-direction: row;
 
  .footer .container {
     margin: 0;
+    margin-right: 120px;
      display: flex;
      justify-content: space-between;
      align-items: flex-start;
