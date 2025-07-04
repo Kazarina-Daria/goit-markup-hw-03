@@ -498,9 +498,7 @@ flex-direction: row;
 
 .footer-logo-text{
     align-items: baseline;
-    flex: 1;
    width: 264px;
-    margin-left: 156px;
     margin-right: 120px;
 }
 .social-media-footer{
